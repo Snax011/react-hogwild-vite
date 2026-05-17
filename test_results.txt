@@ -1,0 +1,2485 @@
+
+ RUN  v2.1.8 /home/maxwe/react-hogwild-vite
+
+ ❯ src/__tests__/App.test.jsx (7 tests | 6 failed) 912ms
+   × Hog App > displays a tile for each hog on load 316ms
+     → Unable to find an element with the alt text: Photo of Babe
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+   × Hog App > displays additional hog details when a tile is clicked 137ms
+     → Unable to find an element with the text: Specialty: Rapping. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+   × Hog App > filters hogs by greased status 136ms
+     → Unable to find a label with the text of: Greased Pigs Only?
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+   × Hog App > sorts hogs by name or weight 93ms
+     → Unable to find a label with the text of: Sort by:
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+   × Hog App > hides a hog when the hide button is clicked 77ms
+     → Unable to find a label with the text of: Sort by:
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+   × Hog App > adds a new hog via the form 89ms
+     → Unable to find a label with the text of: Name:
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 6 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/__tests__/App.test.jsx > Hog App > displays a tile for each hog on load
+TestingLibraryElementError: Unable to find an element with the alt text: Photo of Babe
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/App.test.jsx:10:26
+      8|     hogs.forEach((hog) => {
+      9|       expect(screen.getByText(hog.name)).toBeInTheDocument();
+     10|       const img = screen.getByAltText("Photo of " + hog.name);
+       |                          ^
+     11|       expect(img).toHaveAttribute("src", hog.image);
+     12|     });
+ ❯ src/__tests__/App.test.jsx:8:10
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/6]⎯
+
+ FAIL  src/__tests__/App.test.jsx > Hog App > displays additional hog details when a tile is clicked
+TestingLibraryElementError: Unable to find an element with the text: Specialty: Rapping. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/App.test.jsx:22:19
+     20|     fireEvent.click(hogTile);
+     21| 
+     22|     expect(screen.getByText(`Specialty: ${hogs[index].specialty}`)).to…
+       |                   ^
+     23|     expect(screen.getByText(hogs[index].weight)).toBeInTheDocument();
+     24|     expect(screen.getByText(hogs[index].greased ? "Greased" : "Nongrea…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/6]⎯
+
+ FAIL  src/__tests__/App.test.jsx > Hog App > filters hogs by greased status
+TestingLibraryElementError: Unable to find a label with the text of: Greased Pigs Only?
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/App.test.jsx:30:35
+     28|   it("filters hogs by greased status", () => {
+     29|     render(<App />);
+     30|     const filterCheckbox = screen.getByLabelText("Greased Pigs Only?");
+       |                                   ^
+     31|     fireEvent.click(filterCheckbox);
+     32| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/6]⎯
+
+ FAIL  src/__tests__/App.test.jsx > Hog App > sorts hogs by name or weight
+TestingLibraryElementError: Unable to find a label with the text of: Sort by:
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/App.test.jsx:45:33
+     43|     render(<App />);
+     44| 
+     45|     const sortBySelect = screen.getByLabelText("Sort by:");
+       |                                 ^
+     46|     
+     47|     fireEvent.change(sortBySelect, { target: { value: "name" } });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/6]⎯
+
+ FAIL  src/__tests__/App.test.jsx > Hog App > hides a hog when the hide button is clicked
+TestingLibraryElementError: Unable to find a label with the text of: Sort by:
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/App.test.jsx:64:33
+     62|   it("hides a hog when the hide button is clicked", () => {
+     63|     render(<App />);
+     64|     const sortBySelect = screen.getByLabelText("Sort by:");
+       |                                 ^
+     65|     fireEvent.change(sortBySelect, { target: { value: "name" } });
+     66| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/6]⎯
+
+ FAIL  src/__tests__/App.test.jsx > Hog App > adds a new hog via the form
+TestingLibraryElementError: Unable to find a label with the text of: Name:
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App page-shell"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"navWrapper"[39m
+      [36m>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"headerText"[39m
+        [36m>[39m
+          [0mHogWild[0m
+        [36m</span>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"TwirlyPig"[39m
+        [36m>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"piggy"[39m
+            [33mclass[39m=[32m"App-logo"[39m
+            [33msrc[39m=[32m"/src/assets/porco.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mclass[39m=[32m"normalText"[39m
+        [36m>[39m
+          [0mA React App for County Fair Hog Fans[0m
+        [36m</span>[39m
+      [36m</div>[39m
+      [36m<main[39m
+        [33mclass[39m=[32m"hog-app"[39m
+      [36m>[39m
+        [36m<section[39m
+          [33maria-labelledby[39m=[32m"hog-tools-title"[39m
+          [33mclass[39m=[32m"hog-sidebar"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"section-title"[39m
+            [33mid[39m=[32m"hog-tools-title"[39m
+          [36m>[39m
+            [0mFilter, sort, and add hogs[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"ui segment hog-controls"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"greased-filter"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"greased-filter"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [0mSort by[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-sort"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"none"[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"name"[39m
+                [36m>[39m
+                  [0mName[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"weight"[39m
+                [36m>[39m
+                  [0mWeight[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33maria-label[39m=[32m"Add hog form"[39m
+            [33mclass[39m=[32m"ui form hog-form"[39m
+          [36m>[39m
+            [36m<h3[39m
+              [33mclass[39m=[32m"section-subtitle"[39m
+            [36m>[39m
+              [0mAdd a Hog[0m
+            [36m</h3>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-name"[39m
+              [36m>[39m
+                [0mName[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-name"[39m
+                [33mname[39m=[32m"name"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-specialty"[39m
+              [36m>[39m
+                [0mSpecialty[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-specialty"[39m
+                [33mname[39m=[32m"specialty"[39m
+                [33mtype[39m=[32m"text"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-weight"[39m
+              [36m>[39m
+                [0mWeight[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-weight"[39m
+                [33mmin[39m=[32m"0"[39m
+                [33mname[39m=[32m"weight"[39m
+                [33mstep[39m=[32m"0.1"[39m
+                [33mtype[39m=[32m"number"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field checkbox-field"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mid[39m=[32m"hog-greased"[39m
+                [33mname[39m=[32m"greased"[39m
+                [33mtype[39m=[32m"checkbox"[39m
+              [36m/>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-greased"[39m
+              [36m>[39m
+                [0mGreased[0m
+              [36m</label>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"field"[39m
+            [36m>[39m
+              [36m<label[39m
+                [33mfor[39m=[32m"hog-medal"[39m
+              [36m>[39m
+                [0mHighest medal achieved[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mid[39m=[32m"hog-medal"[39m
+                [33mname[39m=[32m"highestMedalAchieved"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"bronze"[39m
+                [36m>[39m
+                  [0mbronze[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"silver"[39m
+                [36m>[39m
+                  [0msilver[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"gold"[39m
+                [36m>[39m
+                  [0mgold[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"platinum"[39m
+                [36m>[39m
+                  [0mplatinum[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"diamond"[39m
+                [36m>[39m
+                  [0mdiamond[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33m...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getAllByLabelText node_modules/@testing-library/dom/dist/queries/label-text.js:111:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/__tests__/App.test.jsx:77:30
+     75|   it("adds a new hog via the form", () => {
+     76|     render(<App />);
+     77|     const nameInput = screen.getByLabelText("Name:");
+       |                              ^
+     78|     const weightInput = screen.getByLabelText("Weight:");
+     79|     const specialtyInput = screen.getByLabelText("Specialty:");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/6]⎯
+
+ Test Files  1 failed (1)
+      Tests  6 failed | 1 passed (7)
+   Start at  22:04:45
+   Duration  7.27s (transform 479ms, setup 1.07s, collect 427ms, tests 912ms, environment 2.64s, prepare 291ms)
+
