@@ -1,152 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+  color: #2d241f;
+  background:
+    radial-gradient(circle at top left, rgba(245, 169, 188, 0.3), transparent 32%),
+    radial-gradient(circle at top right, rgba(245, 196, 120, 0.25), transparent 28%),
+    linear-gradient(180deg, #fff7f0 0%, #f2e3d9 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .App {
-  margin: 0% 5% 0% 5%;
+  width: min(1280px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+
+.page-shell {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.navWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0 0.5rem;
   text-align: center;
 }
 
 .TwirlyPig {
-  transition: all 3s ease-in-out;
-  display: inline;
+  display: inline-flex;
+  transition: transform 180ms ease-in-out;
 }
 
 .TwirlyPig:hover {
-  transform: scale(1.5);
+  transform: scale(1.08) rotate(-4deg);
 }
 
-.navWrapper {
-  margin-bottom: 2%;
-}
-
-.filterWrapper {
-  margin: 2% 0% 2% 0%;
+.App-logo {
+  height: 80px;
+  width: auto;
 }
 
 .headerText {
-  color: #F5A9BC;
-  font-size: 3em;
-  margin: 0% 2% 0% 2%;
-}
-
-.largeHeader {
-  font-size: 3.5em;
-  font-weight: bold;
-  color: #3B0B0B;
-}
-
-.smallHeader {
-  font-size: 1.75em;
-  font-weight: bold;
-  color: #3B0B0B;
+  color: #cc5c7a;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
 }
 
 .normalText {
   font-family: Georgia, serif;
-  font-size: .75em;
+  font-size: 0.92rem;
+  color: #5b4a44;
 }
 
-.hoggyText {
-  font-size: 1.5em;
+.hog-app {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: 1.25rem;
+  align-items: start;
 }
 
-.achievementText {
-  color: purple;
+.hog-sidebar,
+.hog-main {
+  display: grid;
+  gap: 1rem;
 }
 
-ul {
-  list-style-type: none;
-  list-style: none;
-}
-
-.normalText ul {
+.section-title,
+.section-subtitle {
+  margin: 0;
   font-family: Georgia, serif;
-  font-size: .75em;
-  text-align: left;
+  color: #4a2f28;
 }
 
-.subtleText {
-  color: #D1D1D1;
-  font-size: .75em;
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-
-.indexWrapper {
-  margin: auto;
+.section-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
-
-.pigTile {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center 90%;
-  float: left;
-  margin: 2%;
-  padding: 1%;
-  outline: #3B0B0B dotted thick;
-  transition: 0.75s;
-  opacity: 1;
+.section-description {
+  margin: 0;
+  color: #66534c;
+  line-height: 1.5;
 }
 
-.minBackgroundSneak {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background-size: cover;
-  z-index: -3;
+.hog-controls,
+.hog-form,
+.hog-gallery-header,
+.empty-state {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(93, 64, 55, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(73, 48, 38, 0.08);
 }
 
-.maxBackgroundSneak {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background-size: cover;
-  z-index: -3;
-  opacity: 0.75;
+.hog-controls,
+.hog-form {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
-.pigTile h3 {
-  color: #FBB;
+.hog-controls .field,
+.hog-form .field {
+  display: grid;
+  gap: 0.35rem;
 }
 
-.minPigTile {
-  width: 250px;
-  height: 250px;
-  background-size: cover;
+.hog-controls label,
+.hog-form label {
+  font-weight: 700;
+  color: #47342d;
 }
 
-.maxPigTile {
-  background-size: cover;
-  width: 500px;
-  height: 500px;
+.hog-controls input[type="checkbox"],
+.hog-form input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #cc5c7a;
 }
 
-.pigTile:hover {
-  transform: scale(1.05);
+.checkbox-field {
+  display: flex !important;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-
-.App-logo {
-  animation: App-logo-spin infinite 5s linear;
-  height: 80px;
-  transition: all .2s ease-in-out;
+.hog-controls select,
+.hog-form input,
+.hog-form select {
+  width: 100%;
+  border: 1px solid rgba(93, 64, 55, 0.2);
+  border-radius: 12px;
+  padding: 0.72rem 0.85rem;
+  font: inherit;
+  background: rgba(255, 255, 255, 0.96);
+  color: #2d241f;
 }
 
-.footer {
-  padding: 1%;
-  clear: both;
+.hog-controls select:focus,
+.hog-form input:focus,
+.hog-form select:focus {
+  outline: 2px solid rgba(204, 92, 122, 0.3);
+  outline-offset: 2px;
 }
 
+.add-hog-button,
+.hide-button {
+  justify-self: start;
+  margin-top: 0.2rem !important;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hog-gallery-header {
+  padding: 1rem 1.1rem;
+}
+
+.empty-state {
+  padding: 1rem 1.1rem;
+  font-weight: 700;
+  color: #6a4c44;
+}
+
+.hog-grid {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0 !important;
+}
+
+.hog-column {
+  padding-bottom: 1rem !important;
+}
+
+.hog-card {
+  cursor: pointer;
+  border-radius: 18px !important;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(69, 47, 39, 0.1) !important;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.hog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(69, 47, 39, 0.14) !important;
+}
+
+.hog-image-wrap {
+  background: linear-gradient(180deg, #ffd8e4 0%, #fff0f4 100%);
+}
+
+.hog-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.hog-card-content {
+  display: grid;
+  gap: 0.7rem;
+  background: #fffdfb;
+}
+
+.hog-name {
+  margin: 0 !important;
+  font-family: Georgia, serif;
+  font-size: 1.45rem !important;
+  color: #4a2f28 !important;
+}
+
+.hog-details {
+  display: grid;
+  gap: 0.35rem;
+  color: #53433e;
+}
+
+.hog-details p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.hide-button {
+  background: #b94f68 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 900px) {
+  .hog-app {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .App {
+    width: min(100% - 1rem, 1280px);
+    padding-top: 0.75rem;
   }
 
-  to {
-    transform: rotate(360deg);
+  .navWrapper {
+    gap: 0.5rem;
+  }
+
+  .hog-image {
+    height: 220px;
   }
 }

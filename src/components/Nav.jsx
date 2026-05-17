@@ -9,7 +9,7 @@ const Nav = () => {
 				<img src={piggy} className="App-logo" alt="piggy" />
 			</div>
 			<span className="normalText">
-				A React App for County Fair Hog Fans
+				A React app for county fair pig fans
 			</span>
 		</div>
 	);
