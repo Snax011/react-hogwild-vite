@@ -32,7 +32,7 @@ export default function HogCard({ hog, isExpanded, onToggleDetails, onHide }) {
 						<p>
 							<span>{hog.greased ? "Greased" : "Nongreased"}</span>
 						</p>
-						<p>Highest medal achieved: <span>{hog["highest medal achieved"]}</span></p>
+						<p>Highest medal achieved: {hog["highest medal achieved"]}</p>
 					</div>
 				) : null}
 
