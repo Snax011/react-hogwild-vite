@@ -25,18 +25,14 @@ export default function HogCard({ hog, isExpanded, onToggleDetails, onHide }) {
 
 				{isExpanded ? (
 					<div className="hog-details">
+						<p>Specialty: {hog.specialty}</p>
 						<p>
-							<strong>Specialty:</strong> {hog.specialty}
+							Weight: <span>{hog.weight}</span>
 						</p>
 						<p>
-							<strong>Weight:</strong> {hog.weight}
+							<span>{hog.greased ? "Greased" : "Nongreased"}</span>
 						</p>
-						<p>
-							<strong>Greased:</strong> {hog.greased ? "Yes" : "No"}
-						</p>
-						<p>
-							<strong>Highest medal achieved:</strong> {hog["highest medal achieved"]}
-						</p>
+						<p>Highest medal achieved: <span>{hog["highest medal achieved"]}</span></p>
 					</div>
 				) : null}
 

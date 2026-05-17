@@ -45,7 +45,7 @@ export default function HogForm({ onAddHog }) {
 
 	return (
 		<form className="ui form hog-form" onSubmit={handleSubmit} aria-label="Add hog form">
-			<h3 className="section-subtitle">Add a Hog</h3>
+			<h2 className="section-subtitle">Add a Hog</h2>
 
 			<div className="field">
 				<label htmlFor="hog-name">Name:</label>
